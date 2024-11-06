@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 const port = 3000;
 const MODEL_NAME = "gemini-1.0-pro-001";
 const API_KEY = "AIzaSyAEaC3BGdi9vAtBH0nns6xcFnlyhScstaA"; // 제미나이 API 키로 대체
-const prompt = '﻿해당 학과에 대한 직업을 추천해줘. 예를 들어 컴퓨터라고 치면, 개발자나 데이터사이언티스트라고 답을 하면 돼.'; // 당신의 챗봇에 맞게 프롬프트 변경해주세요
+const prompt = '﻿해당 학과에 맞는 진로 추천해줘.'; // 당신의 챗봇에 맞게 프롬프트 변경해주세요
 
 app.post('/generate', async (req, res) => {  
     try {
