@@ -18,7 +18,8 @@ app.use((req, res, next) => {
 const port = 3000;
 const MODEL_NAME = "gemini-1.0-pro-001";
 const API_KEY = "AIzaSyAEaC3BGdi9vAtBH0nns6xcFnlyhScstaA"; // 제미나이 API 키로 대체
-const prompt = '﻿주제를 제시하면 해당 주제 관련된 직업 제시하기.'; // 당신의 챗봇에 맞게 프롬프트 변경해주세요
+const prompt = '﻿사용자가 제시한 주제와 관련된 직업을 3~5개 제안하고, 각 직업의 주요 역할이나 필요 역량을 간단히 설명해 주세요.
+예를 들어 "컴퓨터"라는 주제를 입력하면 소프트웨어 엔지니어, 데이터 분석가, IT 관리자 등의 직업을 제시하고 간략한 설명을 추가해 주세요.'; // 당신의 챗봇에 맞게 프롬프트 변경해주세요
 
 app.post('/generate', async (req, res) => {  
     try {
